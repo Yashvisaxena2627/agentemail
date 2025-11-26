@@ -18,27 +18,49 @@ Clear API layer for backend operations
 📦 mailgenius
 
  ┣ 📁 app
+ 
  ┃ ┣ 📁 api
+ 
  ┃ ┃ ┣ 📁 emails         → GET inbox data
+ 
  ┃ ┃ ┣ 📁 prompts        → GET/POST/PUT prompt configs
+ 
  ┃ ┃ ┣ 📁 process-email  → LLM categorization & extraction
+ 
  ┃ ┃ ┣ 📁 chat           → LLM-powered chat
+ 
  ┃ ┃ ┗ 📁 drafts         → Safe draft storage
+ 
  ┃ ┣ layout.tsx          → Global layout, theme, metadata
+ 
  ┃ ┗ page.tsx            → Main UI (Inbox + Prompts + Agent Chat)
+ 
  ┣ 📁 components
+ 
  ┃ ┣ inbox.tsx
+ 
  ┃ ┣ email-list.tsx
+ 
  ┃ ┣ email-detail.tsx
+ 
  ┃ ┣ prompt-configurator.tsx
+ 
  ┃ ┣ prompt-editor.tsx
+ 
  ┃ ┣ email-agent.tsx
+ 
  ┃ ┗ email-composer.tsx
+ 
  ┣ 📁 hooks
+ 
  ┃ ┗ use-init-data.ts    → Loads mock inbox + prompts
+ 
  ┣ 📄 SETUP_GUIDE.md
+ 
  ┣ 📄 PROJECT_SUMMARY.md
+ 
  ┣ 📄 COMPLETION_SUMMARY.md
+ 
  ┗ 📄 README.md
 
 
