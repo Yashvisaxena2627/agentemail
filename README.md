@@ -16,6 +16,7 @@ Clean UI with modular architecture
 Clear API layer for backend operations
 
 📦 mailgenius
+
  ┣ 📁 app
  ┃ ┣ 📁 api
  ┃ ┃ ┣ 📁 emails         → GET inbox data
