@@ -86,5 +86,7 @@ No email is ever sent automatically
 🛠 Tech Stack
 
 Frontend: Next.js (App Router), TypeScript, Tailwind CSS, shadcn/ui
+
 Backend/API: Next.js API routes, OpenAI SDK, JSON storage
+
 AI: OpenAI LLM for processing emails and chat responses
