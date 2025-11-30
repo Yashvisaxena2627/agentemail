@@ -78,7 +78,7 @@ email-productivity-agent/
 │   └── (static assets: icons, images)
 │
 ├── scripts/
-│   └── (automation scripts if any)
+│   └── (automation scripts)
 │
 ├── styles/
 │   └── (additional styling files)
@@ -103,4 +103,3 @@ email-productivity-agent/
 ├── README.md
 └── tsconfig.json
 
-📸 Screenshots
