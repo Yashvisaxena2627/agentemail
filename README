@@ -96,7 +96,6 @@ email-productivity-agent/
 ├── SETUP_GUIDE.md
 ├── TROUBLESHOOTING.md
 ├── VERIFICATION_CHECKLIST.md
-│
 ├── next.config.mjs
 ├── package.json
 ├── pnpm-lock.yaml
@@ -106,4 +105,4 @@ email-productivity-agent/
 
 
 📸 Screenshots
-![Uploading Screenshot 2025-11-30 211909.png…]()
+
