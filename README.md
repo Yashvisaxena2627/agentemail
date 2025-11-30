@@ -1,114 +1,104 @@
-MailGenius – Prompt-Driven Email Productivity Agent
+💌 MailGenius – AI Email Productivity Agent
 
-MailGenius is a fully prompt-controlled email processing system built using Next.js, TypeScript, Tailwind CSS, shadcn/ui, and OpenAI.
-It can ingest inbox emails, categorize them, extract action items, generate reply drafts, and offer an AI-powered chat interface — all powered by user-defined prompts.
+MailGenius is an AI-powered email management system built with Next.js 14, TypeScript, Tailwind, and Vercel AI SDK.
+It helps you summarize emails, categorize them, extract action items, generate replies, and manage your inbox with smart automation.
 
-🚀 Features
+Features
+🔍 1. Smart Inbox
+Auto-categorizes emails into:
+Important
+To-Do
+Newsletter
+Spam
+Beautiful UI with labels & color-coding
+Clean email content viewer
 
-Load mock inbox (or Gmail integration if enabled)
-Auto-categorize emails (Important / To-Do / Spam / Newsletter)
-Extract action items using LLM
-Auto-generate reply drafts
-Full Prompt Brain — edit categorization, summary, extraction, and reply prompts
-AI Email Agent Chat (summaries, replies, urgent filters, questions)
-Safe Drafts — emails are never sent automatically
-Clean UI with modular architecture
-Clear API layer for backend operations
-
-📦 mailgenius
-
- ┣ 📁 app
- 
- ┃ ┣ 📁 api
- 
- ┃ ┃ ┣ 📁 emails         → GET inbox data
- 
- ┃ ┃ ┣ 📁 prompts        → GET/POST/PUT prompt configs
- 
- ┃ ┃ ┣ 📁 process-email  → LLM categorization & extraction
- 
- ┃ ┃ ┣ 📁 chat           → LLM-powered chat
- 
- ┃ ┃ ┗ 📁 drafts         → Safe draft storage
- 
- ┃ ┣ layout.tsx          → Global layout, theme, metadata
- 
- ┃ ┗ page.tsx            → Main UI (Inbox + Prompts + Agent Chat)
- 
- ┣ 📁 components
- 
- ┃ ┣ inbox.tsx
- 
- ┃ ┣ email-list.tsx
- 
- ┃ ┣ email-detail.tsx
- 
- ┃ ┣ prompt-configurator.tsx
- 
- ┃ ┣ prompt-editor.tsx
- 
- ┃ ┣ email-agent.tsx
- 
- ┃ ┗ email-composer.tsx
- 
- ┣ 📁 hooks
- 
- ┃ ┗ use-init-data.ts    → Loads mock inbox + prompts
- 
- ┣ 📄 SETUP_GUIDE.md
- 
- ┣ 📄 PROJECT_SUMMARY.md
- 
- ┣ 📄 COMPLETION_SUMMARY.md
- 
- ┗ 📄 README.md
-
-
-How the System Works
-1. Inbox Ingestion
-
-Loads mock inbox JSON with sample emails
-
-Runs LLM to categorize and extract action items
-
-Displays sender, subject, timestamp, tag, summary, actions, and draft
-
-2. Prompt-Driven Architecture
-
-All behaviors are controlled by prompts:
-
-Categorization
-
-Action item extraction
-
-Summaries
-
-Auto-draft replies
-
-Users can edit prompts any time.
-
-3. Email Agent Chat
-
-Ask the system:
-
+🤖 2. AI Email Assistant
+Ask anything about an email and the agent will respond instantly:
 “Summarize this email”
-
 “Draft a reply”
+“What are the action items?”
+“Is this spam or important?”
+“Analyze the tone”
 
-“What tasks do I need to do?”
+✍️ 3. Draft Composer
+Generate safe replies
+No auto-send → you always review first
+Save unlimited drafts
 
-“Is this email important?”
+⚙️ 4. Prompt Brain
+Edit system prompts
+Customize agent behavior
+Save different prompt modes
 
-4. Safe Draft Workflow
+🌙 5. Clean, Minimal UI
+Built with shadcn/ui components
+Tailwind CSS design system
+Mobile responsive
 
-Replies are stored as drafts
 
-No email is ever sent automatically
+Project Structure:-
+email-productivity-agent/
+│
+├── app/
+│   ├── api/
+│   │   └── (API route files inside)
+│   ├── setup/
+│   │   └── (initialization files)
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│   ├── ui/
+│   │   └── (UI primitives from shadcn)
+│   ├── email-agent.tsx
+│   ├── email-composer.tsx
+│   ├── email-detail.tsx
+│   ├── email-list.tsx
+│   ├── inbox.tsx
+│   ├── loading-page.tsx
+│   ├── prompt-configurator.tsx
+│   ├── prompt-editor.tsx
+│   ├── sidebar.tsx
+│   └── theme-provider.tsx
+│
+├── hooks/
+│   └── (custom React hooks)
+│
+├── lib/
+│   └── (helpers, utilities, constants)
+│
+├── public/
+│   └── (static assets: icons, images)
+│
+├── scripts/
+│   └── (automation scripts if any)
+│
+├── styles/
+│   └── (additional styling files)
+│
+├── COMPLETION_SUMMARY.md
+├── COMPONENTS.json
+├── DEMO_SCRIPT.md
+├── DEMO_VIDEO_GUIDE.md
+├── DEPLOYMENT.md
+├── FEATURES.md
+├── GETTING_STARTED.md
+├── INDEX.md
+├── PROJECT_SUMMARY.md
+├── QUICK_START.md
+├── SETUP_GUIDE.md
+├── TROUBLESHOOTING.md
+├── VERIFICATION_CHECKLIST.md
+│
+├── next.config.mjs
+├── package.json
+├── pnpm-lock.yaml
+├── postcss.config.mjs
+├── README.md
+└── tsconfig.json
 
-🛠 Tech Stack
 
-Frontend: Next.js (App Router), TypeScript, Tailwind CSS, shadcn/ui
-
-Backend/API: Next.js API routes, OpenAI SDK, JSON storage
-
-AI: OpenAI LLM for processing emails and chat responses
+📸 Screenshots
+![Uploading Screenshot 2025-11-30 211909.png…]()
