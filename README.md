@@ -3,7 +3,8 @@
 MailGenius is an AI-powered email management system built with Next.js 14, TypeScript, Tailwind, and Vercel AI SDK.
 It helps you summarize emails, categorize them, extract action items, generate replies, and manage your inbox with smart automation.
 
-Features
+Features:-
+
 🔍 1. Smart Inbox
 Auto-categorizes emails into:
 Important
@@ -14,6 +15,7 @@ Beautiful UI with labels & color-coding
 Clean email content viewer
 
 🤖 2. AI Email Assistant
+
 Ask anything about an email and the agent will respond instantly:
 “Summarize this email”
 “Draft a reply”
@@ -22,16 +24,19 @@ Ask anything about an email and the agent will respond instantly:
 “Analyze the tone”
 
 ✍️ 3. Draft Composer
+
 Generate safe replies
 No auto-send → you always review first
 Save unlimited drafts
 
 ⚙️ 4. Prompt Brain
+
 Edit system prompts
 Customize agent behavior
 Save different prompt modes
 
 🌙 5. Clean, Minimal UI
+
 Built with shadcn/ui components
 Tailwind CSS design system
 Mobile responsive
